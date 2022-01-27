@@ -1,0 +1,5 @@
+.DS_Store
+Release.xcconfig
+Debug.xcconfig
+xcuserdata/
+project.xcworkspace
