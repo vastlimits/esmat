@@ -17,6 +17,7 @@
 		110B3DCA27A031D80085AB76 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		113734A527A2A5E1003DC1DA /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		113734A627A2A750003DC1DA /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		113734A727A2BE84003DC1DA /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		1170BC892797E3B800773A26 /* Types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Types.h; sourceTree = "<group>"; };
 		11859AEF266F94D300FFA942 /* esmat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esmat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11859AFA266F94D400FFA942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,11 +38,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113734A827A2BEA7003DC1DA /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				113734A727A2BE84003DC1DA /* Shared.xcconfig */,
+				113734A527A2A5E1003DC1DA /* Debug.xcconfig */,
+				113734A627A2A750003DC1DA /* Release.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		11859AD7266F93CA00FFA942 = {
 			isa = PBXGroup;
 			children = (
-				113734A527A2A5E1003DC1DA /* Debug.xcconfig */,
-				113734A627A2A750003DC1DA /* Release.xcconfig */,
+				113734A827A2BEA7003DC1DA /* Configs */,
 				110B3DCA27A031D80085AB76 /* LICENSE */,
 				110B3DC927A0311F0085AB76 /* .gitignore */,
 				110B3DC827A030FE0085AB76 /* README.md */,

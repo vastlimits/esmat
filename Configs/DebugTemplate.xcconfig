@@ -1,7 +1,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-PRODUCT_BUNDLE_IDENTIFIER = 
+#include "Shared.xcconfig"
+
 CODE_SIGN_IDENTITY = Mac Developer
-DEVELOPMENT_TEAM = 
-PROVISIONING_PROFILE_SPECIFIER = esmat Development
+PROVISIONING_PROFILE_SPECIFIER = 
