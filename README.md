@@ -103,7 +103,7 @@ Building requires Xcode 13 or later (C++20) and an Apple developer account. You 
 Once you received the ES entitlement you can create your provisioning profiles for development and distribution.
 
 To avoid issues with signing and provisioning some configuration options have been offloaded into configuration files.
-Once you've cloned the repo you need to create a `Debug.xcconfig` and optionally a `Release.xcconfig` based on the included template files and fill in the specified values.
+Once you've cloned the repo you need to create a `Shared.xcconfig`, a `Debug.xcconfig` and optionally a `Release.xcconfig` based on the included template files and fill in the specified values.
 This prevents leaking personal information into the repository.
 
 Note: Please do not change these values in the project editor if you want to contribute.
