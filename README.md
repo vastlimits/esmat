@@ -13,9 +13,47 @@ Possible use cases:
 
    
 ## Usage
-Use `./esmat.app/Contents/MacOS/esmat -h` to get all available options and flags with examples. The `-E` flag prints all available Endpoint Security event types.
-`AUTH` events are currently not supported.
-**Note:** esmat needs to be run as root to subscribe to Endpoint Security (with the exception of the `-h` and `-E` flag). 
+Use `./esmat.app/Contents/MacOS/esmat -h` to get all available options and flags with examples:
+
+```
+➜ ./esmat.app/Contents/MacOS/esmat -h
+Endpoint Security Message Analysis Tool - esmat by ∞ vast limits GmbH
+
+Prints statistics for Endpoint Security messages between two SIGINFO signals (ctrl + t).
+Must be run as sudo to be able to subscribe to Endpoint Security events.
+
+Examples:
+sudo ./esmat.app/Contents/MacOS/esmat -a ls git
+
+sudo ./esmat.app/Contents/MacOS/esmat -e NOTIFY_PTY_GRANT NOTIFY_PTY_CLOSE -a sshd
+
+sudo ./esmat.app/Contents/MacOS/esmat -a xpcproxy -pc
+
+
+Usage: ./esmat.app/Contents/MacOS/esmat [OPTIONS]
+
+Options:
+  -h,--help                   Print this help message and exit
+  -a,--apps TEXT ...          Add executable names to watch events for.
+                              If one or more executable names are specified as arguments,
+                              the event types NOTIFY_EXEC, NOTIFY_FORK and NOTIFY_EXIT are automatically enabled.
+
+  -e,--events TEXT ...        Define which ES event types you want to see statistics for.
+                              NOTIFY_EXEC, NOTIFY_FORK and NOTIFY_EXIT are automatically enabled
+                              if arguments are provided via the -a option.
+                              Note: AUTH events are currently not supported.
+
+  -E,--events-available       Prints a list of available Endpoint Security event types.
+                              Note: Not all listed events are available on every version of macOS.
+                              Only the newest macOS version typically supports all events.
+
+  -p,--parent                 Shows which parent processes have exec'ed into the processes specified via -a.
+
+  -c,--child                  Include child processes which the via -a specified processes exec into.
+
+  -C,--cumulative             If set statistics are never reset between intervals.
+```
+
 
 ### Columns of Process Lifecycle Events
 
