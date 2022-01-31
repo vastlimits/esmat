@@ -441,7 +441,7 @@ int main(int argc, char* argv[])
    // https://cliutils.github.io/CLI11/book/chapters/basics.html
    CLI::App app{"Endpoint Security Message Analysis Tool - esmat by ∞ vast limits GmbH\n\n"
       "Prints statistics for Endpoint Security messages between two SIGINFO signals (ctrl + t). \n"
-      "Must be run as sudo to be able to subscribe to Endpoint Security events.\n\n"
+      "Must be run as root to be able to subscribe to Endpoint Security events.\n\n"
       "Examples: \n"
       "sudo ./esmat.app/Contents/MacOS/esmat -a ls git\n\n"
       "sudo ./esmat.app/Contents/MacOS/esmat -e NOTIFY_PTY_GRANT NOTIFY_PTY_CLOSE -a sshd\n\n"

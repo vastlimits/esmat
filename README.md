@@ -20,7 +20,7 @@ Use `./esmat.app/Contents/MacOS/esmat -h` to get all available options and flags
 Endpoint Security Message Analysis Tool - esmat by ∞ vast limits GmbH
 
 Prints statistics for Endpoint Security messages between two SIGINFO signals (ctrl + t).
-Must be run as sudo to be able to subscribe to Endpoint Security events.
+Must be run as root to be able to subscribe to Endpoint Security events.
 
 Examples:
 sudo ./esmat.app/Contents/MacOS/esmat -a ls git
